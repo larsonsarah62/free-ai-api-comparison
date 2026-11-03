@@ -188,6 +188,8 @@ Before integrating, answer four questions in order:
 
 For lightweight multi-model exploration, OpenRouter is the clearest documented no-payment-option starting point, but 50 daily requests is a hard filter. For eligible Gemini projects, Google offers broader model-specific experimentation but adds eligibility and data-use decisions. Groq is easier to size when its published model limits match the workload, though burst tokens can bind early. Cloudflare fits only after you calculate the exact model's compute use. Cohere is best treated as an evaluation lane.
 
+The same checklist applies to unified API platforms: verify the exact model, current price, limits, and account terms instead of assuming an aggregator inherits a provider's free tier. For Moduck, review the [current documentation](https://docs.moduck.ai/) before treating any model or free-access condition as available.
+
 Define an exit condition before launch. Move off the free route when the forecast reaches 70% of the binding limit, when the required model changes, when production terms are needed, or when a payment method becomes acceptable. The 70% point is a planning rule for this example, not a provider threshold. Re-run the comparison whenever the model, quota, data policy, billing trigger, or workload mix changes.
 
 *Provider documentation and English-language general search results were checked on November 3, 2026. Plans can change; verify the linked first-party pages and your active account limits before integration.*
